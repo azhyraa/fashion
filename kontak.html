@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kiranstyle</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">Kiran Azhyra</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">BERANDA</a></li>
+          <li><a href="#">SMKN 6 PALU</a></li>
+          <li><a href="#">TJKT</a></li>
+          <li><a href="#">XII</a></li>
+          <li><a href="kontak.html">KONTAK</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div
+      class="hero"
+      style="
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      "
+    >
+      <h2 style="margin-bottom: 30px">Sosial Media</h2>
+      <div class="social-media"></div>
+    </div>
+
+    <script>
+      const socialMedia = [
+        {
+          name: "kiranazhyraa_",
+          url: "https://www.instagram.com/kiranazhyraa_?igsh=MWI4ZTJnYzN3dnZ5ZQ==",
+          icon: "bi bi-instagram",
+        },
+      ];
+
+      const socialMediaContainer = document.querySelector(".social-media");
+      socialMedia.forEach((media) => {
+        const link = document.createElement("a");
+        link.href = media.url;
+        link.target = "_blank";
+        link.innerHTML = `<i class="${media.icon}"></i> <span>${media.name}</span>`;
+        link.classList.add("social-link");
+        socialMediaContainer.appendChild(link);
+      });
+    </script>
+
+    <footer>
+      <p>&copy; 2025 Kiranstyle - be urself.</p>
+    </footer>
+  </body>
+</html>
