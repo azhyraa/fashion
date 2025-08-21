@@ -23,7 +23,7 @@
           <li><a href="#">SMKN 6 PALU</a></li>
           <li><a href="#">TJKT</a></li>
           <li><a href="#">XII</a></li>
-          <li><a href="kontak.html">KONTAK</a></li>
+          <li><a href="/kontak.html">KONTAK</a></li>
         </ul>
       </nav>
     </header>
@@ -38,31 +38,19 @@
       "
     >
       <h2 style="margin-bottom: 30px">Sosial Media</h2>
-      <div class="social-media"></div>
+      <div class="social-media">
+        <a 
+          href="https://www.instagram.com/kiranazhyraa_?igsh=MWI4ZTJnYzN3dnZ5ZQ=="
+          style="social-link"
+          >
+          <i class="bi bi-instagram"></i>
+          <span>kiranazhyra__</span>
+        </a>
+      </div>
     </div>
-
-    <script>
-      const socialMedia = [
-        {
-          name: "kiranazhyraa_",
-          url: "https://www.instagram.com/kiranazhyraa_?igsh=MWI4ZTJnYzN3dnZ5ZQ==",
-          icon: "bi bi-instagram",
-        },
-      ];
-
-      const socialMediaContainer = document.querySelector(".social-media");
-      socialMedia.forEach((media) => {
-        const link = document.createElement("a");
-        link.href = media.url;
-        link.target = "_blank";
-        link.innerHTML = `<i class="${media.icon}"></i> <span>${media.name}</span>`;
-        link.classList.add("social-link");
-        socialMediaContainer.appendChild(link);
-      });
-    </script>
-
     <footer>
       <p>&copy; 2025 Kiranstyle - be urself.</p>
     </footer>
   </body>
 </html>
+
